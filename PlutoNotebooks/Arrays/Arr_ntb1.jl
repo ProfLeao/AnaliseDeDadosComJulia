@@ -125,7 +125,7 @@ end
 
 # ╔═╡ a7c99d06-96f2-4997-8e54-f9ba1e40d4f1
 md"""
-Finalmente é preciso mencionar a versatilidade dos métodos `rand` para a geração de arranjos com números aleatórios, e o método `Array` para a geração de arranjos com valores indefinidos, geralmente substituídos por outros em algum processo.
+Finalmente é preciso mencionar a versatilidade dos métodos `rand` para a geração de arranjos com números aleatórios, e o método `Array` para a geração de arranjos com valores indefinidos de um determinado tipo, geralmente substituídos por outros em algum processo.
 """
 
 # ╔═╡ 3f7d07d1-95d4-4288-b33c-052e71c8b5a4
@@ -133,6 +133,11 @@ mat_rand = rand(1:10,5,5)
 
 # ╔═╡ dad14dd8-8cd4-4824-a92c-2dc8fad02831
 mat_undef = Array{Float16}(undef, 3,3)
+
+# ╔═╡ a5e247c3-31f9-4111-82db-5f3289209fc1
+md"""
+Neste último caso, `undef` serão um valores do tipo `Float16` que preenherão a matriz 3x3.
+"""
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -170,5 +175,6 @@ project_hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709"
 # ╠═a7c99d06-96f2-4997-8e54-f9ba1e40d4f1
 # ╠═3f7d07d1-95d4-4288-b33c-052e71c8b5a4
 # ╠═dad14dd8-8cd4-4824-a92c-2dc8fad02831
+# ╠═a5e247c3-31f9-4111-82db-5f3289209fc1
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
